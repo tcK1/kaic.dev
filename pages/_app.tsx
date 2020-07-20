@@ -10,6 +10,8 @@ const GlobalStyle = createGlobalStyle`
     color: white;
 
     margin: 0;
+
+    font-family: 'Vollkorn', serif;
   }
 `;
 
@@ -19,6 +21,11 @@ export default ({ Component, pageProps }: AppProps) => (
 
     <Head>
       <title>who&apos;s kaic</title>
+
+      <link
+        href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap"
+        rel="stylesheet"
+      />
     </Head>
 
     <Component {...pageProps} />
