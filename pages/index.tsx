@@ -1,3 +1,5 @@
-const Index = () => <h1>hei</h1>
+import React from 'react';
 
-export default Index
+const Index = () => <h1>hei</h1>;
+
+export default Index;
