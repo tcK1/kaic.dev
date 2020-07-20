@@ -1,6 +1,8 @@
 import React from 'react';
-import { AppProps } from 'next/app';
 import { createGlobalStyle } from 'styled-components';
+
+import Head from 'next/head';
+import { AppProps } from 'next/app';
 
 const GlobalStyle = createGlobalStyle`
   body, html {
@@ -14,6 +16,11 @@ const GlobalStyle = createGlobalStyle`
 export default ({ Component, pageProps }: AppProps) => (
   <>
     <GlobalStyle />
+
+    <Head>
+      <title>who&apos;s kaic</title>
+    </Head>
+
     <Component {...pageProps} />
   </>
 );
