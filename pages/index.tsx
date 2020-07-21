@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import Nav from 'components/Nav';
+
 const Container = styled.div`
   height: 100vh;
   display: grid;
@@ -20,6 +22,8 @@ const Index = () => (
         I write code, but mostly just talk about it.
         Currently working as a front-end software engineer.
       </span>
+
+      <Nav />
     </div>
   </Container>
 );
