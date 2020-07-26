@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Nav from 'components/Nav';
+import { Nav } from 'components/Nav';
 
 const Container = styled.div`
   height: 100vh;

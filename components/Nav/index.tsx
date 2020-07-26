@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import { Container, Item, A } from './styles';
 
-export default () => (
+export const Nav = () => (
   <nav>
     <Container>
       <Item>
