@@ -8,13 +8,13 @@ export default () => (
     <Container>
       <Item>
         <Link href="/" passHref>
-          <A><code>&#47;* index.tsx *&#47;</code></A>
+          <A>index</A>
         </Link>
       </Item>
-
+      |
       <Item>
         <Link href="/timeline" passHref>
-          <A><code>&#47;* timeline.tsx *&#47;</code></A>
+          <A>timeline</A>
         </Link>
       </Item>
     </Container>
