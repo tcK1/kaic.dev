@@ -4,6 +4,8 @@ import { createGlobalStyle } from 'styled-components';
 import Head from 'next/head';
 import { AppProps } from 'next/app';
 
+import { Layout } from 'components/Layout';
+
 const GlobalStyle = createGlobalStyle`
   body, html {
     background: black;
@@ -28,6 +30,8 @@ export default ({ Component, pageProps }: AppProps) => (
       />
     </Head>
 
-    <Component {...pageProps} />
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
   </>
 );

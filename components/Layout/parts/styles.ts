@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-export const Container = styled.ul`
+export const Container = styled.nav``;
+
+export const Content = styled.ul`
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -13,6 +15,7 @@ export const Item = styled.li`
 `;
 
 export const A = styled.a`
+  display: flex;
   text-decoration: none;
   color: white;
 
