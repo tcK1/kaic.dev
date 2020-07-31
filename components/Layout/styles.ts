@@ -9,4 +9,5 @@ export const Container = styled.div`
 export const Content = styled.main`
   display: grid;
   place-items: center;
+  padding: 2.5rem;
 `;
