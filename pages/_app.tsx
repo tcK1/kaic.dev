@@ -2,7 +2,7 @@ import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 
 import Head from 'next/head';
-import { AppProps } from 'next/app';
+import type { AppProps } from 'next/app';
 
 import { Layout } from 'components/Layout';
 

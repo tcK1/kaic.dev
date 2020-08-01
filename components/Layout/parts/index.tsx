@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import {
   Container, Content, Item, A,
@@ -42,6 +42,10 @@ export const Footer = () => (
   <ItemsList>
     <A href="https://github.com/tcK1" target="_blank" rel="noreferrer">
       <FontAwesomeIcon icon={faGithub} height="1.375rem" />
+    </A>
+
+    <A href="https://linkedin.com/in/kaicbastidas/" target="_blank" rel="noreferrer">
+      <FontAwesomeIcon icon={faLinkedin} height="1.375rem" />
     </A>
   </ItemsList>
 );
