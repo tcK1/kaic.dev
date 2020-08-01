@@ -1,4 +1,4 @@
-import React, { ReactNode, FC } from 'react';
+import React, { ReactNode } from 'react';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -48,7 +48,7 @@ const navItems: {
   },
 ];
 
-export const Nav: FC = () => (
+export const Nav = () => (
   <ItemsList>
     {navItems.map(({ href, text }) => (
       <Link
@@ -76,7 +76,7 @@ const footerItems: {
   },
 ];
 
-export const Footer: FC = () => (
+export const Footer = () => (
   <ItemsList containerType="footer">
     {footerItems.map(({ href, icon }) => (
       <A
