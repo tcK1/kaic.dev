@@ -9,8 +9,8 @@ const Index = () => (
       This is were I will showcase everything I want. Like, anything really.
     </h2>
     <span>
-      I write code, but mostly just talk about it.
-      Currently working as a front-end software engineer.
+      I write code, but mostly just talk about it. Currently working as a
+      front-end software engineer.
     </span>
   </div>
 );

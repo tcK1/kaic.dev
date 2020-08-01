@@ -19,9 +19,9 @@ export const A = styled.a`
   text-decoration: none;
   color: white;
 
-  transition: opacity .2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 
-  opacity: .5;
+  opacity: 0.5;
 
   :hover {
     opacity: 1;

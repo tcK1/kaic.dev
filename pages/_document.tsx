@@ -11,9 +11,11 @@ export default class CustomDocument extends Document {
     try {
       const originalRenderPage = ctx.renderPage;
 
-      ctx.renderPage = () => originalRenderPage({
-        enhanceApp: (App) => (props) => sheet.collectStyles(<App {...props} />),
-      });
+      ctx.renderPage = () =>
+        originalRenderPage({
+          enhanceApp: (App) => (props) =>
+            sheet.collectStyles(<App {...props} />),
+        });
 
       finalProps = await Document.getInitialProps(ctx);
 
