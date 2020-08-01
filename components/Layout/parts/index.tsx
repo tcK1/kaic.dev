@@ -34,17 +34,29 @@ ItemsList.defaultProps = {
   containerType: 'nav',
 } as ItemsListProps;
 
-const navItems: string[] = ['index', 'timeline'];
+const navItems: {
+  href: string
+  text: string
+}[] = [
+  {
+    href: '/',
+    text: 'index',
+  },
+  {
+    href: '/timeline',
+    text: 'timeline',
+  },
+];
 
 export const Nav: FC = () => (
   <ItemsList>
-    {navItems.map((item) => (
+    {navItems.map(({ href, text }) => (
       <Link
-        key={item}
-        href={`/${item}`}
+        key={text}
+        href={href}
         passHref
       >
-        <A>{item}</A>
+        <A>{text}</A>
       </Link>
     ))}
   </ItemsList>

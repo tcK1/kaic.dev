@@ -1,1 +1,3 @@
-export default () => null;
+const Timeline = () => null;
+
+export default Timeline;

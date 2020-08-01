@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export default ({ Component, pageProps }: AppProps) => (
+const CustomApp = ({ Component, pageProps }: AppProps) => (
   <>
     <GlobalStyle />
 
@@ -35,3 +35,5 @@ export default ({ Component, pageProps }: AppProps) => (
     </Layout>
   </>
 );
+
+export default CustomApp;
