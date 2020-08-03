@@ -43,6 +43,10 @@ const navItems: {
     href: '/timeline',
     text: 'timeline',
   },
+  {
+    href: '/whoami',
+    text: 'who am i',
+  },
 ];
 
 export const Nav = () => (
