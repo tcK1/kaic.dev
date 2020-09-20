@@ -1,11 +1,7 @@
 import React, { ReactNode } from 'react';
 import Link from 'next/link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  IconDefinition,
-  faGithub,
-  faLinkedin,
-} from '@fortawesome/free-brands-svg-icons';
+import { IconType } from 'react-icons';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 import { Container, Content, Item, A } from './styles';
 
@@ -61,23 +57,23 @@ export const Nav = () => (
 
 const footerItems: {
   href: string;
-  icon: IconDefinition;
+  Icon: IconType;
 }[] = [
   {
     href: 'https://github.com/tcK1',
-    icon: faGithub,
+    Icon: FaGithub,
   },
   {
     href: 'https://linkedin.com/in/kaicbastidas',
-    icon: faLinkedin,
+    Icon: FaLinkedin,
   },
 ];
 
 export const Footer = () => (
   <ItemsList containerType="footer">
-    {footerItems.map(({ href, icon }) => (
+    {footerItems.map(({ href, Icon }) => (
       <A key={href} href={href} target="_blank" rel="noreferrer">
-        <FontAwesomeIcon icon={icon} height="1.375rem" />
+        <Icon />
       </A>
     ))}
   </ItemsList>

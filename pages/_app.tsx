@@ -15,6 +15,10 @@ const GlobalStyle = createGlobalStyle`
 
     font-family: 'Vollkorn', serif;
   }
+
+  .icons {
+    font-size: 1.375rem;
+  }
 `;
 
 const CustomApp = ({ Component, pageProps }: AppProps) => (

@@ -1,18 +1,21 @@
-import React, { ReactElement } from 'react';
+import React, { ReactNode } from 'react';
+import { IconContext } from 'react-icons';
 
 import { Nav, Footer } from './parts';
 import { Container, Content } from './styles';
 
 interface Props {
-  children: ReactElement;
+  children: ReactNode;
 }
 
 export const Layout = ({ children }: Props) => (
-  <Container>
-    <Nav />
+  <IconContext.Provider value={{ className: 'icons' }}>
+    <Container>
+      <Nav />
 
-    <Content>{children}</Content>
+      <Content>{children}</Content>
 
-    <Footer />
-  </Container>
+      <Footer />
+    </Container>
+  </IconContext.Provider>
 );
